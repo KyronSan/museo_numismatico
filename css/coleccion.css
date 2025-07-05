@@ -1,0 +1,186 @@
+:root {
+  --color-fondo: #f8f1e7;
+  --color-texto: #3b2f2f;
+  --color-subtexto: #5e4b3c;
+  --color-header-footer: #6b4f3b;
+  --color-tarjeta: #f1e6d6;
+  --color-borde: #c9b8a5;
+  --color-hover: #e4d1b5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fondo: #2e241c;
+    --color-texto: #f5eadd;
+    --color-subtexto: #d3c2b1;
+    --color-header-footer: #4a3525;
+    --color-tarjeta: #3a2c22;
+    --color-borde: #6c5843;
+    --color-hover: #5a4633;
+  }
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+header {
+  background-color: var(--color-header-footer);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-style: italic;
+}
+
+/* Pie de página */
+footer {
+  background-color: var(--color-header-footer);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Contenido principal */
+main {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Filtros */
+.filtro-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#buscador,
+#selector-serie {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  max-width: 300px;
+  width: 100%;
+  background-color: white;
+  color: var(--color-texto);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+#buscador:focus,
+#selector-serie:focus {
+  outline: none;
+  border-color: var(--color-subtexto);
+}
+
+#contador {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--color-subtexto);
+}
+
+/* Galería de monedas */
+.contenedor-monedas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tarjeta {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.02);
+  background-color: var(--color-hover);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.tarjeta h3 {
+  margin: 0.5rem 0;
+  color: var(--color-texto);
+}
+
+.tarjeta p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: var(--color-subtexto);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contenedor-monedas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-monedas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #buscador,
+  #selector-serie {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-monedas {
+    grid-template-columns: 1fr;
+  }
+}
+.tarjeta button {
+  background-color: #a67c52; /* tono madera clara */
+  color: #fff8e7;
+  border: 2px solid #8b5e3c;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 1rem;
+}
+
+.tarjeta button:hover {
+  background-color: #7c5a38;
+  transform: scale(1.03);
+}
