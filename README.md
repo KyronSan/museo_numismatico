@@ -1,2 +1,2 @@
 # museo_numismatico
-Es un museo de mis colección actual de monedas.
+Es un museo numismatico de mi actual colección de monedas personal.
