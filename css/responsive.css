@@ -1,0 +1,30 @@
+@media (max-width: 1024px) {
+  .contenedor-monedas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-monedas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #buscador,
+  #selector-serie {
+    max-width: 90%;
+  }
+
+  .tarjeta img {
+    max-height: 95px;
+  }
+
+  .tarjeta {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-monedas {
+    grid-template-columns: 1fr;
+  }
+}

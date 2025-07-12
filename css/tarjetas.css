@@ -1,0 +1,63 @@
+/* Galería de monedas */
+.contenedor-monedas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tarjeta {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: black;
+}
+
+.tarjeta:hover {
+  transform: scale(1.02);
+  background-color: #563f2f;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.tarjeta h3 {
+  margin: 0.5rem 0;
+  color: #ffffff;
+}
+
+.tarjeta p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.tarjeta button {
+  background-color: #a67c52;
+  color: #fff8e7;
+  border: 2px solid #8b5e3c;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 1rem;
+}
+
+.tarjeta button:hover {
+  background-color: #7c5a38;
+  transform: scale(1.03);
+}
