@@ -53,3 +53,17 @@
 #zoom-close:hover {
   background: rgba(255, 83, 83, 0.8);
 }
+
+/* Ajustes específicos para móviles */
+@media (max-width: 768px) {
+  #zoom-close {
+    top: -20px;
+    right: -20px;
+    font-size: 2rem;
+    width: 36px;
+    height: 36px;
+    line-height: 34px;
+    background: rgba(255, 83, 83, 0.8); /* Más visible en pantallas pequeñas */
+  }
+}
+  
