@@ -25,6 +25,17 @@
 
 @media (max-width: 480px) {
   .contenedor-monedas {
-    grid-template-columns: 2fr;
+    grid-template-columns: 2fr; /* Ya muestra una sola columna */
+    padding: 0.5rem;
+  }
+
+  .tarjeta {
+    padding: 0.6rem;
+    font-size: 11px;
+  }
+
+  .tarjeta img {
+    max-height: 80px;
   }
 }
+
