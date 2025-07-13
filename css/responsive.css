@@ -25,6 +25,6 @@
 
 @media (max-width: 480px) {
   .contenedor-monedas {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
   }
 }
