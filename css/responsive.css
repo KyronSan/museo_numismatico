@@ -1,0 +1,78 @@
+/* Moviles 393px x 873px [Levemente altos]: (2 columnas) */
+@media (max-width: 393px) and (min-width: 361px) {
+  .contenedor-monedas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .tarjeta {
+    width: 135px;
+    font-size: 12px;
+  }
+
+  .tarjeta img {
+    max-height: auto;
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+}
+
+/* Moviles 360px x 800px [Medianos]: (2 columnas) */
+@media (max-width: 360px) {
+  .contenedor-monedas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .tarjeta {
+    width: 120px;
+    font-size: 11px;
+  }
+
+  .tarjeta img {
+    max-height: auto;
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+}
+
+/* Moviles Echados 800px x 360px [Largo/Mediano - echado]: (4 columnas) */
+@media (max-width: 800px) {
+  .contenedor-monedas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .tarjeta {
+    width: 120px;
+    font-size: 11px;
+  }
+
+  .tarjeta img {
+    max-height: auto;
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+}
+
+
+/* Para PC (responsive) */
+@media (min-width: 1025px) {
+  .tarjeta {
+    margin: 8px;
+  }
+
+}
+
