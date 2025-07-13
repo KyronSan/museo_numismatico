@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museo Numismático</title>
+  <link rel="stylesheet" href="css/estructura_coleccion.css">
+  <link rel="stylesheet" href="css/tarjetas.css">
+  <link rel="stylesheet" href="css/formulario.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/zoom_lupa.css">
+
+  <link rel="icon" href="image/moneda_kyron.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Museo Numismático</h1>
+    <p>Explora la colección histórica de monedas</p>
+  </header>
+
+  <main>
+    <section class="filtro-contenedor">
+      <input type="text" id="buscador" placeholder="Buscar por nombre, país, año o serie...">
+      <select id="selector-serie">
+        <option value="">Todas las series</option>
+      </select>
+    </section>
+
+    <p id="contador">Monedas encontradas: 0</p>
+
+    <section class="contenedor-monedas" id="contenedor-monedas">
+      <!-- Las tarjetas se insertan automáticamente con JS -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Museo Numismático Virtual</p>
+    <p>Kyron-San | Company</p>
+    <!-- 06/07/2025 - Fecha de inicio de programación-->
+  </footer>
+
+  <script src="js/utilidades_de_lectura.js"></script>
+  <script src="js/interfaz.js"></script>
+  <script src="js/filtros.js"></script>
+  <script src="js/conversion_de_datos.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/zoom_lupa.js"></script>
+
+  <script src="https://cdn.botpress.cloud/webchat/v3.1/inject.js" defer></script>
+  <script src="https://files.bpcontent.cloud/2025/07/08/03/20250708030326-VGZIYKUT.js" defer></script>
+</body>
+</html>
